@@ -225,7 +225,7 @@ def _build_pivot_structure(wb, ws_pivot, ws_data, allowed_months: Optional[list]
     mapping = _map_fields(pivot)
 
     # ── Row fields ────────────────────────────────────────────────
-    for group in [["GRUPO DESPESA"], ["CONTA"], ["DESCRICAO CONTA", "DESCRICAO CONTA"]]:
+    for group in [["GRUPO DESPESA"], ["CONTA"], [" DESCRICAO CONTA", "DESCRICAO CONTA"]]:
         pf = _get_field(pivot, mapping, group)
         if not pf:
             log.warning("Campo nao encontrado (linha): %s", group)
@@ -290,7 +290,7 @@ def _build_pivot_structure(wb, ws_pivot, ws_data, allowed_months: Optional[list]
         if pf:
             pf.Orientation = _XL.PageField
 
-    pf_div = _get_field(pivot, mapping, ["DIVULGACAO"])
+    pf_div = _get_field(pivot, mapping, ["DIVULGAÇÃO"])
     if pf_div:
         try:
             pf_div.Orientation  = _XL.PageField
@@ -369,6 +369,12 @@ def _build_pivot_structure(wb, ws_pivot, ws_data, allowed_months: Optional[list]
     pivot.RefreshTable()
     time.sleep(0.25)
     pivot.ManualUpdate = True
+
+    # HABILITA DRILL DOWN
+    try:
+        pivot.EnableDrilldown = True
+    except Exception as exc:
+        log.warning("Nao foi possivel habilitar drilldown: %s", exc)
 
     try:
         _order_pivot_items_by_chrono(_get_field(pivot, _map_fields(pivot), ["MES", "Mes"]))
@@ -594,6 +600,12 @@ def create_pivot_win32(
     excel.Visible       = False
     excel.DisplayAlerts = False
     wb = None
+
+    # Garante drilldown global no Excel
+    try:
+        excel.EnableDrilldown = True
+    except Exception:
+        pass
 
     try:
         wb = excel.Workbooks.Open(excel_file_path)

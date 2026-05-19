@@ -1,8 +1,20 @@
 {
-  "_comentario": "Adicione ou remova destinatários aqui sem editar código. Formato: 'Nome Completo': 'email@dominio.com'",
+  "_comentario": "Adicione ou remova destinatários aqui. Formato: 'Nome Completo': 'email@dominio.com'",
   "destinatarios": {
 
-    "Rafael Leite": "yago.costa-ext@jci.com"
+    "Adriana Costa": "adriana.costa@jci.com",
+    "Hebert Hiroyuki": "hebert.taira@jci.com",
+    "Adriana Pimentel":"adriana.pimentel@jci.com",
+    "Alexandre Cantoni":"alexandre.deganicantoni@jci.com",
+    "Aline Martins": "aline.martins@jci.com",
+    "Fabricio Camargo": "fabricio.camargo@jci.com",
+    "Maria M Lopardo": "maria.martha.lopardo@jci.com",
+    "Rafael Leite": "rafael.maciel.leite@jci.com",
+    "Pablo Guillermo Rubio": "pablo.guillermo.rubio@jci.com",
+    "Tatiane Castilho": "tatiane.castilho.pereira@adt.com.br",
+    "Nathalia Duzzi": "nathalia.duzzi@jci.com",
+    "Angela Nagamine": "angela.nagamine@jci.com",
+    "Izabella Barretti": "yago.costa-ext@jci.com"
 
   },
   "_inativos": {

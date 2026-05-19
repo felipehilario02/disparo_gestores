@@ -224,6 +224,7 @@ BODY_TEMPLATE = """
 
             <p style="margin:0 0 16px; font-size:17px; line-height:1.55;">
               Informamos que a base de despesas do mês já está disponível.<br>
+              Segue em anexo o arquivo atualizado.
             </p>
 
             <p style="margin:0 0 20px; font-size:16px;">
@@ -259,18 +260,8 @@ BODY_TEMPLATE = """
   </tr>
 </table>
 
-            <!-- ESPAÇADOR (SUBSTITUI MARGIN-TOP) -->
-            <table width="100%" cellpadding="0" cellspacing="0">
-              <tr>
-                <td height="16" style="font-size:0; line-height:0; background:#ffffff">
-                  &nbsp;
-                </td>
-              </tr>
-            </table>
-
-
             <!-- UPDATE BOX -->
-            <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:6px; background:#f2f2f2; border-radius:12px;">
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:40px; background:#f2f2f2; border-radius:12px;">
               <tr>
                 <td style="padding:20px 22px; text-align:center; font-size:16px; color:#333;">
                   <strong style="font-size:18px;">Atualizações 🛠️</strong><br><br>
@@ -284,7 +275,7 @@ BODY_TEMPLATE = """
             </table>
 
             <!-- FOOTER -->
-            <p style="margin:28px 0 0; font-size:15px; color:#555555;">
+            <p style="margin:44px 0 0; font-size:15px; color:#555555;">
               Qualquer dúvida, entre em contato com
               <a href="mailto:izabella.barretti@jci.com"
                  style="color:#0066cc; text-decoration:none;">
