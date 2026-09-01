@@ -140,7 +140,7 @@ def main() -> None:
     # =====================================================
     for gestor_nome in gestores:
 
-        # ✅ REGRA DE NEGÓCIO SEMPRE PRIMEIRO
+        # REGRA DE NEGÓCIO SEMPRE PRIMEIRO
         if gestor_nome in FULL_BASE_RECIPIENTS:
             process_base_completa(
                 df,
@@ -153,7 +153,7 @@ def main() -> None:
             )
             processed_full.add(gestor_nome)
 
-        # ✅ GESTORES NORMAIS DEPENDEM DA BASE
+        # GESTORES NORMAIS DEPENDEM DA BASE
         else:
             df_resp = df[df[col_resp] == gestor_nome]
 

@@ -252,7 +252,7 @@ def process_base_completa(
     ensure_dir(gestor_dir)
 
     out_file = (
-        f"7.Despesas Gerais FY{fy:02d} ({mes_anterior_pt})"
+        f"10.Despesas Gerais FY{fy:02d} ({mes_anterior_pt})"
         f" - {sanitize_filename_component(gestor_nome)}.xlsx"
     )
     out_path = os.path.join(gestor_dir, out_file)
@@ -295,7 +295,7 @@ def process_gestor_normal(
     ensure_dir(gestor_dir)
 
     out_file = (
-        f"Despesas Gerais FY{fy:02d} ({mes_anterior_pt})"
+        f"9.Despesas Gerais FY{fy:02d} ({mes_anterior_pt})"
         f" - {sanitize_filename_component(gestor_nome)}.xlsx"
     )
     out_path = os.path.join(gestor_dir, out_file)

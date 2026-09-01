@@ -187,113 +187,130 @@ MESES_PT = [
 # ======================================================
 
 BODY_TEMPLATE = """
-<!doctype html>
-<html lang="pt-br">
-<head>
-  <meta charset="utf-8">
-  <title>Notificação – Base de Despesas</title>
-</head>
+  <!doctype html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Notificação – Base de Despesas</title>
+  </head>
 
-<body style="margin:0; padding:0; background-color:#f4f4f4;">
+  <body style="margin:0; padding:0; background-color:#f4f4f4;">
 
-<!-- WRAPPER -->
-<table width="100%" cellpadding="0" cellspacing="0" bgcolor="#f4f4f4">
-  <tr>
-    <td align="center" style="padding:30px 0;">
+  <!-- WRAPPER -->
+  <table width="100%" cellpadding="0" cellspacing="0" bgcolor="#f4f4f4">
+    <tr>
+      <td align="center" style="padding:30px 0;">
 
-      <!-- CONTAINER -->
-      <table width="640" cellpadding="0" cellspacing="0" style="background:#ffffff; border-radius:12px; overflow:hidden; font-family:Tahoma, Arial, Helvetica, sans-serif;">
+        <!-- CONTAINER -->
+        <table width="640" cellpadding="0" cellspacing="0" style="background:#ffffff; border-radius:12px; overflow:hidden; font-family:Tahoma, Arial, Helvetica, sans-serif;">
 
-        <!-- HERO -->
-        <tr>
-          <td align="center">
-            <img src="cid:hero_bg"
-                 alt="Notificação de despesas"
-                 width="640"
-                 style="display:block; width:640px; max-width:100%; height:auto; border:0; margin:0;" />
-          </td>
-        </tr>
+          <!-- HERO -->
+          <tr>
+            <td align="center">
+              <img src="cid:hero_bg"
+                  alt="Notificação de despesas"
+                  width="640"
+                  style="display:block; width:640px; max-width:100%; height:auto; border:0; margin:0;" />
+            </td>
+          </tr>
 
-        <!-- CONTENT -->
-        <tr>
-          <td style="padding:32px; text-align:center; color:#333333;">
+          <!-- CONTENT -->
+          <tr>
+            <td style="padding:32px; text-align:center; color:#333333;">
 
-            <h2 style="margin:0 0 16px; font-size:24px; font-weight:normal;">
-              Olá {responsavel},
-            </h2>
+              <h2 style="margin:0 0 16px; font-size:24px; font-weight:normal;">
+                Olá {responsavel},
+              </h2>
 
-            <p style="margin:0 0 16px; font-size:17px; line-height:1.55;">
-              Informamos que a base de despesas do mês já está disponível.<br>
-              Segue em anexo o arquivo atualizado.
-            </p>
+              <p style="margin:0 0 16px; font-size:17px; line-height:1.55;">
+                Informamos que a base de despesas do mês já está disponível.<br>
+              </p>
 
-            <p style="margin:0 0 20px; font-size:16px;">
-              Para acessar o dashboard e a base de dados completa:
-            </p>
+              <p style="margin:0 0 20px; font-size:16px;">
+                Para acessar o dashboard e a base de dados completa:
+              </p>
 
-<!-- ICONES POWER BI + EXCEL -->
-<table cellpadding="0" cellspacing="0" align="center">
-  <tr>
-    <!-- POWER BI -->
-    <td align="center" style="padding-right:10px;">
-      <a href="https://app.powerbi.com/Redirect?action=OpenReport&amp;appId=e362eba8-af56-4e8d-83b8-95c780bb6504&amp;reportObjectId=1f7a083f-188b-49ea-a0c7-8912fb644807&amp;ctid=a1f1e214-7ded-45b6-81a1-9e8ae3459641&amp;reportPage=e1c594aa699aadc09741&amp;pbi_source=appShareLink"
-         target="_blank">
-        <img src="cid:pbi_icon"
-             alt="Power BI"
-             width="48"
-             height="48"
-             style="display:block; border:0;" />
-      </a>
-    </td>
+  <!-- ICONES POWER BI + EXCEL -->
+  <table cellpadding="0" cellspacing="0" align="center">
+    <tr>
+      <!-- POWER BI -->
+      <td align="center" style="padding-right:10px;">
+        <a href="https://app.powerbi.com/Redirect?action=OpenReport&amp;appId=e362eba8-af56-4e8d-83b8-95c780bb6504&amp;reportObjectId=1f7a083f-188b-49ea-a0c7-8912fb644807&amp;ctid=a1f1e214-7ded-45b6-81a1-9e8ae3459641&amp;reportPage=e1c594aa699aadc09741&amp;pbi_source=appShareLink"
+          target="_blank">
+          <img src="cid:pbi_icon"
+              alt="Power BI"
+              width="48"
+              height="48"
+              style="display:block; border:0;" />
+        </a>
+      </td>
 
-    <!-- EXCEL -->
-    <td align="center" style="padding-left:10px;">
-      <a href="https://apps.jci.com/:f:/r/sites/ADT-EquipeFinanceiro/Shared%20Documents/Despesas%20-%20Gestores?csf=1&web=1&e=ik3kX4"
-         target="_blank">
-        <img src="cid:excel_icon"
-             alt="Excel"
-             width="48"
-             height="48"
-             style="display:block; border:0;" />
-      </a>
-    </td>
-  </tr>
-</table>
+      <!-- EXCEL -->
+      <td align="center" style="padding-left:10px;">
+        <a href="https://apps.jci.com/:f:/r/sites/ADT-EquipeFinanceiro/Shared%20Documents/Despesas%20-%20Gestores?csf=1&web=1&e=ik3kX4"
+          target="_blank">
+          <img src="cid:excel_icon"
+              alt="Excel"
+              width="48"
+              height="48"
+              style="display:block; border:0;" />
+        </a>
+      </td>
+    </tr>
+  </table>
 
-            <!-- UPDATE BOX -->
-            <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:40px; background:#f2f2f2; border-radius:12px;">
-              <tr>
-                <td style="padding:20px 22px; text-align:center; font-size:16px; color:#333;">
-                  <strong style="font-size:18px;">Atualizações 🛠️</strong><br><br>
+              <!-- ESPAÇADOR (SUBSTITUI MARGIN-TOP) -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td height="16" style="font-size:0; line-height:0; background:#ffffff">
+                    &nbsp;
+                  </td>
+                </tr>
+              </table>
 
-                  <strong>Evolução no Processo de envio</strong><br><br>
-                  ✅ Substituímos o envio do anexo pelo acesso via SharePoint<br>	
-                  ✅ Mais segurança e controle das informações<br>
 
-                </td>
-              </tr>
-            </table>
+              <!-- UPDATE BOX -->
+  <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:6px; background:#f2f2f2; border-radius:12px;">
+    <tr>
+      <td style="padding:20px 22px; font-size:16px; color:#333; text-align:left;">
 
-            <!-- FOOTER -->
-            <p style="margin:44px 0 0; font-size:15px; color:#555555;">
-              Qualquer dúvida, entre em contato com
-              <a href="mailto:izabella.barretti@jci.com"
-                 style="color:#0066cc; text-decoration:none;">
-                izabella.barretti@jci.com
-              </a>.
-            </p>
+        <div style="text-align:center;">
+          <strong style="font-size:18px;">Atualizações 🛠️</strong><br><br>
+        </div>
 
-          </td>
-        </tr>
+        <!-- BLOCO CENTRALIZADO -->
+        <table width="85%" cellpadding="0" cellspacing="0" align="center">
+          <tr>
+            <td width="20" valign="top" style="padding-left:8px;">✅</td>
+            <td style="padding-left:6px;">Correções de performance.</td>
+          </tr>
+        </table>
 
-      </table>
-      <!-- /CONTAINER -->
+      </td>
+    </tr>
+  </table>
 
-    </td>
-  </tr>
-</table>
-<!-- /WRAPPER -->
 
-</body>
-</html>
+              <!-- FOOTER -->
+              <p style="margin:28px 0 0; font-size:15px; color:#555555;">
+                Qualquer dúvida, entre em contato com
+                <a href="mailto:izabella.barretti@jci.com"
+                  style="color:#0066cc; text-decoration:none;">
+                  izabella.barretti@jci.com
+                </a>
+              </p>
+
+            </td>
+          </tr>
+
+        </table>
+        <!-- /CONTAINER -->
+
+      </td>
+    </tr>
+  </table>
+  <!-- /WRAPPER -->
+
+  </body>
+  </html>
 """
