@@ -30,12 +30,12 @@ load_dotenv(Path(__file__).parent / ".env", override=False)
 
 BASE_DIR = os.getenv(
     "BASE_DIR",
-    r"C:\Users\jcostaya\OneDrive - Johnson Controls\Documentos\Despesas DB\DB Geral",
+    r"C:\Users\jvenanf\Johnson Controls\ADT - Equipe Financeiro - Documentos\Utils\Despesas DB\DB Geral",
 )
 
 GESTORES_DIR = os.getenv(
     "GESTORES_DIR",
-    r"C:\Users\jcostaya\Johnson Controls\ADT - Equipe Financeiro - Documentos\Despesas - Gestores",
+    r"C:\Users\jvenanf\Johnson Controls\ADT - Equipe Financeiro - Documentos\Despesas - Gestores",
 )
 
 INPUT_FILE = "Despesas Gerais.xlsx"
@@ -70,7 +70,7 @@ SEND_EMAILS: bool = _send_raw in ("true", "1", "yes")
 
 LOGO_PATH = os.getenv(
     "LOGO_PATH",
-    r"C:\Users\jcostaya\Downloads\Logo ADT Nova 3.png",
+    r"C:\Users\jvenanf\Johnson Controls\ADT - Equipe Financeiro - Documentos\Utils\Despesas DB\Mail\Logo ADT Nova 3.png",
 )
 
 LOGO_CONTENT_ID = "logo-adt"
@@ -80,14 +80,14 @@ INLINE_IMAGES: list[dict[str, str]] = [
         "cid": "hero_bg",
         "path": os.getenv(
             "HERO_BANNER_PATH",
-            r"C:\Users\jcostaya\OneDrive - Johnson Controls\Documentos\Despesas DB\Mail\Mail ADT Background.png",
+            r"C:\Users\jvenanf\Johnson Controls\ADT - Equipe Financeiro - Documentos\Utils\Despesas DB\Mail\Mail ADT Background.png",
         ),
     },
     {
         "cid": "pbi_icon",
         "path": os.getenv(
             "POWERBI_ICON_PATH",
-            r"C:\Users\jcostaya\Downloads\icons8-power-bi-2021-48.png",
+            r"C:\Users\jvenanf\Johnson Controls\ADT - Equipe Financeiro - Documentos\Utils\Despesas DB\Mail\icons8-power-bi-2021-48.png",
             
         ),
     },
@@ -95,7 +95,7 @@ INLINE_IMAGES: list[dict[str, str]] = [
         "cid": "excel_icon",
         "path": os.getenv(
             "EXCEL_ICON_PATH",
-            r"C:\Users\jcostaya\OneDrive - Johnson Controls\Documentos\Despesas DB\Mail\excel_icon.png",
+            r"C:\Users\jvenanf\Johnson Controls\ADT - Equipe Financeiro - Documentos\Utils\Despesas DB\Mail\excel_icon.png",
             
         ),
     },
@@ -158,8 +158,7 @@ COMENTARIOS_SHEET = "Comentario"
 
 COMENTARIOS_FILE = os.getenv(
     "COMENTARIOS_FILE",
-    r"C:\Users\jcostaya\OneDrive - Johnson Controls"
-    r"\Documentos\Despesas DB\DB Geral\Comentários DB.xlsx",
+    r"C:\Users\jvenanf\Johnson Controls\ADT - Equipe Financeiro - Documentos\Utils\Despesas DB\DB Geral\Comentários DB.xlsx",
 )
 
 # ======================================================
